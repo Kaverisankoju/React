@@ -66,3 +66,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+.count {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.count-red {
+  color: red !important;
+}
+
+.count-green {
+  color: green !important;
+}
+
+.count-black {
+  color: black !important;
+}
+
+:root {
+  color: black !important;
+}

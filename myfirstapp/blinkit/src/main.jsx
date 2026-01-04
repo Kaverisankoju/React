@@ -10,9 +10,11 @@ import CounterApp from './classComponents/CounterApp.jsx'
 import Application from './components/Application.jsx'
 import Application1 from './components/application1.jsx'
 import RecipesApp from './components/recipes.jsx'
+import CounterApp1 from './components/CounterApp1.jsx'
+import { Toggle } from './components/Timer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <RecipesApp/>
+  <Toggle/>
   </StrictMode>,
 )
