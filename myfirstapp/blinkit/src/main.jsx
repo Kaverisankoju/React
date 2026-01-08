@@ -13,9 +13,23 @@ import RecipesApp from './components/recipes.jsx'
 import CounterApp1 from './components/CounterApp1.jsx'
 import { Toggle } from './components/Timer.jsx'
 import Timer from './components/TimerApp.jsx'
+import { BrowserRouter, Routes, Route } from "react-router";
+import Items from './components/Items.jsx'
+import NotFoundPage from './components/NotFoundPage.jsx'
+import About from './components/About.jsx'
+import Recipe from './components/Recipe.jsx'
+import { CustomSpinner } from './components/CustomSpinner.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Timer/>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/blinkit" element={<Items/>} />
+      <Route path="*" element={<NotFoundPage/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/recipe/:id" element={<Recipe/>} />
+
+    </Routes>
+  </BrowserRouter>
   </StrictMode>,
 )

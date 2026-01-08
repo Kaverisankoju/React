@@ -19,10 +19,8 @@ class Application extends React.Component{
   render(){
     return(
         <>
-        <CustomNavbar/>
-        <CustomCarosel/>
         {this.state.recipes.length>0?<>
-        {this.state.recipes.map((each)=><img src={each.image}  style={{width:"300px"}}/>)}
+        {this.state.recipes.map((each)=><img src={each.image}  style={{width:"250px"}}/>)}
         </>:'no data'}
         </>
     )
